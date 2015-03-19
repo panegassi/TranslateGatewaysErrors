@@ -9,9 +9,7 @@ Quando esses dados é passado de forma incorreta, os gateways devolvem um xml co
 
 Para utilizar basta chamar a classe e os metodos conforme abaixo e passar como parametro o xml de erro que o gateway te devolveu:
 
-/**
- * @param PagSeguroServiceException $error
- */
+* @param PagSeguroServiceException $error
 $error = TranslateGatewaysErrorsFactory::factory($error)->getErrorTranslate();
 
 
